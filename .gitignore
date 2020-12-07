@@ -1,3 +1,6 @@
-nimcache/
-nimblecache/
-htmldocs/
+images
+video
+node_modules
+auth.json
+auth.json
+memberData.json

@@ -23,5 +23,10 @@
         "title": "Mon Calamari",
         "description": "The Mon Calamari were a humanoid, aquatic species native to the planet of Mon Cala. They shared their home planet with the Quarren.",
         "image": "https://static.wikia.nocookie.net/starwars/images/a/a9/Hidden_Cache-EoD.jpg/revision/latest/scale-to-width-down/1000?cb=20140128170910"
+    },
+    {
+        "title": "Wookiee",
+        "description": "Wookiees were a species of tall, hairy humanoids that were native to the planet Kashyyyk.",
+        "image": "https://static.wikia.nocookie.net/starwars/images/9/98/Wookiee_trench.png/revision/latest/scale-to-width-down/1000?cb=20131113153550"
     }
 ]

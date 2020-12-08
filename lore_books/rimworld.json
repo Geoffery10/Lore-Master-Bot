@@ -29,4 +29,10 @@
         "description": "Wookiees were a species of tall, hairy humanoids that were native to the planet Kashyyyk.",
         "image": "https://static.wikia.nocookie.net/starwars/images/9/98/Wookiee_trench.png/revision/latest/scale-to-width-down/1000?cb=20131113153550"
     }
+    ,
+    {
+        "title": "Darksaber",
+        "description": "The Darksaber was an ancient and unique black-bladed lightsaber created by Tarre Vizsla, the first Mandalorian ever inducted into the Jedi Order.",
+        "image": "https://static.wikia.nocookie.net/starwars/images/3/33/PreVizslaBaldy-SWE.jpg/revision/latest/scale-to-width-down/720?cb=20120113042534"
+    }
 ]

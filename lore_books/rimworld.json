@@ -18,5 +18,10 @@
         "title": "Time Lord",
         "description": "The Time Lords were inhabitants of the planet Gallifrey, who were most famous for the creation and attempted monopolisation of time travel technology. They created and upheld the Laws of Time.",
         "image": "https://i.pinimg.com/originals/d7/e5/2f/d7e52f2f573d235cdca0d72e7b773c85.jpg"
+    },
+    {
+        "title": "Mon Calamari",
+        "description": "The Mon Calamari were a humanoid, aquatic species native to the planet of Mon Cala. They shared their home planet with the Quarren.",
+        "image": "https://static.wikia.nocookie.net/starwars/images/a/a9/Hidden_Cache-EoD.jpg/revision/latest/scale-to-width-down/1000?cb=20140128170910"
     }
 ]

@@ -37,7 +37,10 @@ async def on_message(message):
             # Get Search Key
             searchKey = message.content[6:]
 
+            server = ""
             # Open Data
+            if server == "785611085418987531":
+                path = './lore_books/rimworld.json'
             with open('./lore_books/rimworld.json') as f:
                 data = json.load(f)
             print(data)

@@ -40,11 +40,12 @@ async def on_message(message):
 
             server = message.guild.id
             print(server)
-            # Open Data
+            # Open Data Based on Server
             if server == 785611085418987531:
                 path = './lore_books/rimworld.json'
             else:
                 path = './lore_books/blank.json'
+
             with open(path) as f:
                 data = json.load(f)
             print(data)

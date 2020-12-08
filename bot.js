@@ -60,12 +60,22 @@ client.on('message', message => {
     args = args.splice(1);
 
     if (cmd.includes("lore".toLowerCase()) == true) {
+      //Locate Path
       var path = "./lore_books/rimworld.json"
       console.log("Path: " + path);
+
+      //Get search value
       var search = message.content.substring(6).toLowerCase();
       console.log("Search: " + search);
+
+      //Parse Data
       let loreBookRAW = fs.readFileSync(path);
       let loreBook = JSON.parse(loreBookRAW);
+      var loreMap = {};
+      var i = null;
+      for (i = 0; loreBook.length > i; i += 1) {
+        loreMap[loreBook[i].tagName] = tags[i];
+      }
       console.log("Length: " + loreBook.length);
       if ((message.content.substring(0, 6) == "!lore ".toLowerCase()) && (message.content.substring(5)) != NaN) {
           console.log(loreBook);

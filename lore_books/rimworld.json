@@ -63,5 +63,10 @@
         "title": "Mice",
         "description": "Mice are small rodents who, unbeknownst to the human race, are the most intelligent species on the planet Earth.",
         "image": "https://static.wikia.nocookie.net/hitchhikers/images/d/d2/Frankie_and_Benjy_Mouse.jpg/revision/latest/scale-to-width-down/226?cb=20180729153619"
+    },
+    {
+        "title": "Human",
+        "description": "Humans are bipedal ape descendants from the planet Earth. Not noted for being particularly bright, up until they are destroyed, if they even manage to do that much correctly, they actually still think that digital watches are a pretty neat idea, and they spend most of their time concerning themselves with moving about little green pieces of paper. On the bright side, they are rather adept at adapting to just about any situation that the universe tosses at them.",
+        "image": "https://content.fortune.com/wp-content/uploads/2017/02/506802698.jpg"
     }
 ]

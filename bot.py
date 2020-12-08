@@ -47,6 +47,7 @@ async def on_message(message):
                 path = './lore_books/rimworld.json'
             else:
                 path = './lore_books/blank.json'
+                await message.channel.send(f'No Lore was found for {message.guild.name}.')
 
             with open(path) as f:
                 data = json.load(f)

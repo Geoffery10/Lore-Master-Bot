@@ -38,5 +38,10 @@
         "title": "Lightsaber",
         "description": "The lightsaber, also referred to as a laser sword by those who were unfamiliar with it, was a weapon usually used by the Jedi, the Sith, and other Force-sensitives. Lightsabers consisted of a plasma blade, powered by a kyber crystal, that was emitted from a usually metal hilt and could be shut off at will. It was a weapon that required skill and training, and was greatly enhanced when used in conjunction with the Force.",
         "image": "https://static.wikia.nocookie.net/starwars/images/d/d2/HighRepublic-PhilNoto.jpg/revision/latest/scale-to-width-down/1000?cb=20200226154428"
+    },
+    {
+        "title": "Jedi",
+        "description": "A Jedi was a devotee to the ways of the Jedi Order, an ancient order of protectors united by their ability to harness the power of the Force. Adhering to a doctrine that favored the light side of the Force, the Jedi aspired to attain a state of inner tranquility through calmness and meditation while avoiding emotions affiliated with the dark side of the Force, such as anger and hatred. Nevertheless, Jedi philosophy did not forbid a Jedi from acting in self-defense or in the defense of others. To that end, the weapon of a Jedi was the lightsaber, a blade composed of pure energy and different colors such as blue, green, purple or yellow.",
+        "image": "https://static.wikia.nocookie.net/starwars/images/e/e9/Jedi-of-the-High-Republic.png/revision/latest/scale-to-width-down/1000?cb=20200227023613"
     }
 ]

@@ -3,7 +3,6 @@ import os
 
 import discord
 from dotenv import load_dotenv
-import random
 import json
 from re import search
 

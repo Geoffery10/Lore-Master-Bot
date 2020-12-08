@@ -28,6 +28,7 @@ async def on_member_join(member):
     await member.create_dm()
     await member.dm_channel.send(f'Hello, {member.name}, welcome traveller!')
 
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -37,10 +38,13 @@ async def on_message(message):
             # Get Search Key
             searchKey = message.content[6:]
 
-            server = ""
+            server = message.guild.id
+            print(server)
             # Open Data
-            if server == "785611085418987531":
+            if server == 785611085418987531:
                 path = './lore_books/rimworld.json'
+            else:
+                return
             with open('./lore_books/rimworld.json') as f:
                 data = json.load(f)
             print(data)
@@ -69,11 +73,13 @@ async def on_message(message):
                     embed.set_thumbnail(url=image)
                 await message.channel.send(embed=embed)
             else:
-                embed = discord.Embed(title=str(searchKey), colour=discord.Colour(0x78dfee), description=('The term ' + str(searchKey) + ' was not found...'))
+                embed = discord.Embed(title=str(searchKey), colour=discord.Colour(0x78dfee),
+                                      description=('The term ' + str(searchKey) + ' was not found...'))
                 await message.channel.send(embed=embed)
         else:
             embed = discord.Embed(title="Incorrect Format", colour=discord.Colour(0x78dfee),
                                   description=('Please type !lore followed by the search.'))
             await message.channel.send(embed=embed)
+
 
 client.run(TOKEN)

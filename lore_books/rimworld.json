@@ -28,11 +28,15 @@
         "title": "Wookiee",
         "description": "Wookiees were a species of tall, hairy humanoids that were native to the planet Kashyyyk.",
         "image": "https://static.wikia.nocookie.net/starwars/images/9/98/Wookiee_trench.png/revision/latest/scale-to-width-down/1000?cb=20131113153550"
-    }
-    ,
+    },
     {
         "title": "Darksaber",
         "description": "The Darksaber was an ancient and unique black-bladed lightsaber created by Tarre Vizsla, the first Mandalorian ever inducted into the Jedi Order.",
         "image": "https://static.wikia.nocookie.net/starwars/images/3/33/PreVizslaBaldy-SWE.jpg/revision/latest/scale-to-width-down/720?cb=20120113042534"
+    },
+    {
+        "title": "Lightsaber",
+        "description": "The lightsaber, also referred to as a laser sword by those who were unfamiliar with it, was a weapon usually used by the Jedi, the Sith, and other Force-sensitives. Lightsabers consisted of a plasma blade, powered by a kyber crystal, that was emitted from a usually metal hilt and could be shut off at will. It was a weapon that required skill and training, and was greatly enhanced when used in conjunction with the Force.",
+        "image": "https://static.wikia.nocookie.net/starwars/images/d/d2/HighRepublic-PhilNoto.jpg/revision/latest/scale-to-width-down/1000?cb=20200226154428"
     }
 ]

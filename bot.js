@@ -54,96 +54,77 @@ client.on('message', message => {
   
   if (message.content.substring(0, 1) == '!') {
     var args = message.content.substring(1).split(' ');
-  var cmd = args[0];
-  console.log("Command issued " + message.content) 
+    var cmd = args[0];
+    console.log("Command issued " + message.content) 
 
-  args = args.splice(1);
+    args = args.splice(1);
 
-  if (message.content.toLowerCase().includes("lore".toLowerCase()) == true) {
-    if (message.guild.id == '785611085418987531'){
+    if (cmd.includes("lore".toLowerCase()) == true) {
       var path = "./lore_books/rimworld.json"
-    } else {
-      var path = "./lore_books/rimworld.json"
-    }
-    console.log("Path " + path);
-    var search = message.content.substring(6).toLowerCase();
-    var loreBook = require(path)
-    let loreBookData = JSON.parse(fs.readFileSync(path, 'utf-8'))
-    if ((message.content.substring(0, 6) == "!lore ".toLowerCase()) && (parseInt(message.content.substring(5))) != NaN) {
-        console.log(loreBookData);
-        console.log("Length:" + loreBookData.length);
-        console.log("Searching for " + search);
-        var i;
-        for (i = 0; i < loreBookData.length; ++i) {
-          console.log("Lore: " + loreBookData[i].title)
-          if (loreBookData[i].title.includes(search).toLowerCase() == true) {
-            var title = loreBookData[i].title;
-            var description = loreBookData[i].description;
-            var image = loreBookData[i].url;
-            console.log("Found: " + loreBookData[i].title)
-          }
-        }
-
-        if (title != undefined) {
-          try {
-            var lore = {
-              "title": title,
-              "description": description,
-              "color": 7921646,
-              "thumbnail": {
-                "url": image
-              }
-            };
-            console.log(lore)
-            if (lore != undefined) {
-              channel.send({lore});
-            } else {
-              var embed = {
-                "embed": {
-                    "title": "Not Found",
-                    "description": `Could not find your lore.`,
-                    "color": 7921646,
-                  }
-                }
-              console.log(embed)
-              channel.send(embed);
+      console.log("Path: " + path);
+      var search = message.content.substring(6).toLowerCase();
+      console.log("Search: " + search);
+      let loreBookRAW = fs.readFileSync(path);
+      let loreBook = JSON.parse(loreBookRAW);
+      console.log("Length: " + loreBook.length);
+      if ((message.content.substring(0, 6) == "!lore ".toLowerCase()) && (message.content.substring(5)) != NaN) {
+          console.log(loreBook);
+          console.log("Searching for " + search);
+          for (var loreValue in loreBook.lore) {
+            console.log("Lore: " + loreValue)
+            if (String(loreValue.title).includes(search) == true) {
+              var title = loreValue.title;
+              var description = loreValue.description;
+              var image = loreValue.url;
+              console.log("Found: " + loreValue.title)
             }
-          } catch (e) {
+          }
+          if (title != undefined) {
+              var lore = {
+                "title": title,
+                "description": description,
+                "color": 7921646,
+                "thumbnail": {
+                  "url": image
+                }
+              };
+              console.log(lore)
+              if (lore != undefined) {
+                channel.send({lore});
+              } else {
+                var embed = {
+                  "embed": {
+                      "title": "Not Found",
+                      "description": `Could not find your lore.`,
+                      "color": 7921646,
+                    }
+                  }
+                console.log(embed)
+                channel.send(embed);
+              }
+          } else {
             var embed = {
               "embed": {
-                  "title": "Not Found",
-                  "description": `Could not find your lore.`,
-                  "color": 7921646,
-                }
+                "title": "Not Found",
+                "description": `Could not find your lore.`,
+                "color": 7921646,
               }
-            };
-            console.log(embed)
-            channel.send(embed);
-          }
-        } else {
-          var embed = {
-            "embed": {
-              "title": "Not Found",
-              "description": `Could not find your lore.`,
-              "color": 7921646,
             }
+          console.log(embed)
+          channel.send(embed);
+          }  
+      } else {
+        var embed = {
+          "embed": {
+            "title": "Not Found",
+            "description": `Could not find your lore.`,
+            "color": 7921646,
           }
-        console.log(embed)
-        channel.send(embed);
         }
-
-        
-    } else {
-      var embed = {
-        "embed": {
-          "title": "Not Found",
-          "description": `Could not find your lore.`,
-          "color": 7921646,
-        }
+      console.log(embed)
+      channel.send(embed);
+      //score = commands.command(Discord, client, message, channel, score, IP, simplify)
       }
-    console.log(embed)
-    channel.send(embed);
-    //score = commands.command(Discord, client, message, channel, score, IP, simplify)
     }
   }
 

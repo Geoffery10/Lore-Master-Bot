@@ -12,6 +12,11 @@
     {
         "title": "Zirconian",
         "description": "Zirconians are a race known for being harsh, stern and none emotional. Their government is cold and controlling. There physical characteristics consist of human like bodies with varying shades of blue skin.",
-        "image": "https://static.wikia.nocookie.net/starwars/images/8/84/CoruscantGlobeE1.png/revision/latest?cb=20130123002137"
+        "image": ""
+    },
+    {
+        "title": "Time Lord",
+        "description": "The Time Lords were inhabitants of the planet Gallifrey, who were most famous for the creation and attempted monopolisation of time travel technology. They created and upheld the Laws of Time.",
+        "image": "https://i.pinimg.com/originals/d7/e5/2f/d7e52f2f573d235cdca0d72e7b773c85.jpg"
     }
 ]

@@ -44,8 +44,8 @@ async def on_message(message):
             if server == 785611085418987531:
                 path = './lore_books/rimworld.json'
             else:
-                path = './lore_books/blank.json'
-            with open(path) as f:
+                return
+            with open('./lore_books/rimworld.json') as f:
                 data = json.load(f)
             print(data)
 

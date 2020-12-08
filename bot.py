@@ -63,9 +63,11 @@ async def on_message(message):
                     embed.set_thumbnail(url=image)
                 await message.channel.send(embed=embed)
             else:
-                response = 'The term ' + str(searchKey) + ' was not found...'
-                await message.channel.send(response)
+                embed = discord.Embed(title=str(searchKey), colour=discord.Colour(0x78dfee), description=('The term ' + str(searchKey) + ' was not found...'))
+                await message.channel.send(embed=embed)
         else:
-            await message.channel.send("Please type something to search after the command...")
+            embed = discord.Embed(title="Incorrect Format", colour=discord.Colour(0x78dfee),
+                                  description=('Please type !lore followed by the search.'))
+            await message.channel.send(embed=embed)
 
 client.run(TOKEN)

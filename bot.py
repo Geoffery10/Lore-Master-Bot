@@ -39,8 +39,8 @@ async def on_message(message):
             searchKey = message.content[6:]
 
             server = message.guild.id
-            channel = client.get_channel(785703473147936808)
-            await channel.send("Server " + server)
+            # channel = client.get_channel(785703473147936808)
+            # await channel.send("Server " + str(server))
             print(server)
             # Open Data Based on Server
             if server == 785611085418987531:

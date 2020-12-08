@@ -1,71 +1,85 @@
 [
     {
         "title": "Orbis",
+        "type": "Planet",
         "description": "Orbis is an artificially created planet where the top layers consist of a beautiful trade city and the bottom layers consist of the planet's criminal unground.",
         "image": "https://static.wikia.nocookie.net/starwars/images/8/84/CoruscantGlobeE1.png/revision/latest?cb=20130123002137"
     },
     {
         "title": "Magic",
+        "type": "Thing",
         "description": "The energy the binds all life.",
         "image": "https://www.wallpapermaiden.com/wallpaper/12106/download/1600x2560/anime-girls-magic-fantasy-cyborg-artwork-sci-fi.jpg"
     },
     {
         "title": "Zirconian",
+        "type": "Race",
         "description": "Zirconians are a race known for being harsh, stern and none emotional. Their government is cold and controlling. There physical characteristics consist of human like bodies with varying shades of blue skin.",
         "image": ""
     },
     {
         "title": "Time Lord",
+        "type": "Race",
         "description": "The Time Lords were inhabitants of the planet Gallifrey, who were most famous for the creation and attempted monopolisation of time travel technology. They created and upheld the Laws of Time.",
         "image": "https://i.pinimg.com/originals/d7/e5/2f/d7e52f2f573d235cdca0d72e7b773c85.jpg"
     },
     {
         "title": "Mon Calamari",
+        "type": "Race",
         "description": "The Mon Calamari were a humanoid, aquatic species native to the planet of Mon Cala. They shared their home planet with the Quarren.",
         "image": "https://static.wikia.nocookie.net/starwars/images/a/a9/Hidden_Cache-EoD.jpg/revision/latest/scale-to-width-down/1000?cb=20140128170910"
     },
     {
         "title": "Wookiee",
+        "type": "Race",
         "description": "Wookiees were a species of tall, hairy humanoids that were native to the planet Kashyyyk.",
         "image": "https://static.wikia.nocookie.net/starwars/images/9/98/Wookiee_trench.png/revision/latest/scale-to-width-down/1000?cb=20131113153550"
     },
     {
         "title": "Darksaber",
+        "type": "Weapon",
         "description": "The Darksaber was an ancient and unique black-bladed lightsaber created by Tarre Vizsla, the first Mandalorian ever inducted into the Jedi Order.",
         "image": "https://static.wikia.nocookie.net/starwars/images/3/33/PreVizslaBaldy-SWE.jpg/revision/latest/scale-to-width-down/720?cb=20120113042534"
     },
     {
         "title": "Lightsaber",
+        "type": "Weapon",
         "description": "The lightsaber, also referred to as a laser sword by those who were unfamiliar with it, was a weapon usually used by the Jedi, the Sith, and other Force-sensitives. Lightsabers consisted of a plasma blade, powered by a kyber crystal, that was emitted from a usually metal hilt and could be shut off at will. It was a weapon that required skill and training, and was greatly enhanced when used in conjunction with the Force.",
         "image": "https://static.wikia.nocookie.net/starwars/images/d/d2/HighRepublic-PhilNoto.jpg/revision/latest/scale-to-width-down/1000?cb=20200226154428"
     },
     {
         "title": "Jedi",
+        "type": "Group",
         "description": "A Jedi was a devotee to the ways of the Jedi Order, an ancient order of protectors united by their ability to harness the power of the Force. Adhering to a doctrine that favored the light side of the Force, the Jedi aspired to attain a state of inner tranquility through calmness and meditation while avoiding emotions affiliated with the dark side of the Force, such as anger and hatred. Nevertheless, Jedi philosophy did not forbid a Jedi from acting in self-defense or in the defense of others. To that end, the weapon of a Jedi was the lightsaber, a blade composed of pure energy and different colors such as blue, green, purple or yellow.",
         "image": "https://static.wikia.nocookie.net/starwars/images/e/e9/Jedi-of-the-High-Republic.png/revision/latest/scale-to-width-down/1000?cb=20200227023613"
     },
     {
         "title": "The Force",
+        "type": "Thing",
         "description": "Another name for Magic is The Force. It was practiced by the Orders of the Jedi and Sith.",
         "image": "https://static.wikia.nocookie.net/starwars/images/e/e9/Jedi-of-the-High-Republic.png/revision/latest/scale-to-width-down/1000?cb=20200227023613"
     },
     {
         "title": "Anime Girl",
+        "type": "Race",
         "description": "The race of the Anime Girl was created after the 3rd nuking of the Earth land called Japan. The race is almost exclusively female having to mate with other humans to survive.",
         "image": "https://wallpaperaccess.com/full/1255550.jpg"
     },
     {
         "title": "Dolphins",
+        "type": "Race",
         "description": "The dolphins are the second most intelligent species on the planet Earth, only surpassed by mice, although many outside observers don't know about the mice. They long ago knew of Earth's planned destruction and tried to communicate this to humans who misinterpreted it as \"amusing attempts to punch football or whistle for tidbits.\" The last ever dolphin message was misinterpreted as a surprisingly sophisticated attempt to do a double backward somersault through a hoop while whistling the \"Star Spangled Banner,\" but was, in fact, a message. The message was \"so long, and thanks for all the fish.",
         "image": "https://static.wikia.nocookie.net/hitchhikers/images/a/a8/Dolphins.jpg/revision/latest/scale-to-width-down/480?cb=20080521014243"
     },
     {
         "title": "Mice",
+        "type": "Race",
         "description": "Mice are small rodents who, unbeknownst to the human race, are the most intelligent species on the planet Earth.",
         "image": "https://static.wikia.nocookie.net/hitchhikers/images/d/d2/Frankie_and_Benjy_Mouse.jpg/revision/latest/scale-to-width-down/226?cb=20180729153619"
     },
     {
         "title": "Human",
+        "type": "Race",
         "description": "Humans are bipedal ape descendants from the planet Earth. Not noted for being particularly bright, up until they were nearly destroyed, if they even manage to do that much correctly, they actually still think that digital watches are a pretty neat idea, and they spend most of their time concerning themselves with moving about little green pieces of paper. On the bright side, they are rather adept at adapting to just about any situation that the universe tosses at them.",
         "image": "https://content.fortune.com/wp-content/uploads/2017/02/506802698.jpg"
     }

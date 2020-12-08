@@ -54,6 +54,7 @@ async def on_message(message):
                         title = lore["title"]
                         description = lore["description"]
                         image = lore["image"]
+                        type = lore["type"]
                         found = True
 
             # Send Lore if Found

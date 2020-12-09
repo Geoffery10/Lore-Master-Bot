@@ -36,9 +36,13 @@ async def on_message(message):
         return
 
     if search("^!lore", message.content):
-        if len(message.content) > 6:
+        length = 6
+    if search("^?", message.content):
+        length = 1
+    if search("^!lore", message.content) or search("^?", message.content):
+        if len(message.content) > length:
             # Get Search Key
-            searchKey = message.content[6:]
+            searchKey = message.content[length:]
 
             server = message.guild.id
             # channel = client.get_channel(785703473147936808)

@@ -37,9 +37,9 @@ async def on_message(message):
 
     if search("^!lore", message.content):
         length = 6
-    if search("^?", message.content):
+    if search("^\?", message.content):
         length = 1
-    if search("^!lore", message.content) or search("^?", message.content):
+    if search("^!lore", message.content) or search("^\?", message.content):
         if len(message.content) > length:
             # Get Search Key
             searchKey = message.content[length:]

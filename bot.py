@@ -7,6 +7,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import json
 from re import search
+import requests
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -33,6 +34,7 @@ async def on_member_join(member):
 async def on_message(message):
     if message.author == client.user:
         return
+
     if search("^!lore", message.content):
         if len(message.content) > 6:
             # Get Search Key
@@ -48,7 +50,7 @@ async def on_message(message):
             else:
                 path = './lore_books/blank.json'
                 await message.channel.send(f'No Lore was found for {message.guild.name}.')
-                return 
+                return
 
             with open(path) as f:
                 data = json.load(f)

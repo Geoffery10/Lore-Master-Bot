@@ -18,7 +18,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
-    # activity = discord.Game(name="to Lore", type=2)
+    # activity = discord.Game(name="Lore", type=2)
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="to Lore"))
     channel = client.get_channel(785703473147936808)
     await channel.send("Ready")

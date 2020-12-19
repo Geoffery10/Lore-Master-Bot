@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 import json
 from re import search
 import requests
+from loggingChannel import sendLog
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -17,7 +18,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print(f'{client.user} has connected to Discord!')
+    print(await sendLog(log=(f'{client.user} has connected to Discord!'), client=client))
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="Lore"))
     channel = client.get_channel(785703473147936808)
     await channel.send("Ready")
@@ -26,13 +27,19 @@ async def on_ready():
 @client.event
 async def on_member_join(member):
     await member.create_dm()
-    await member.dm_channel.send(f'Hello, {member.name}, welcome traveller!')
+    await member.dm_channel.send(await sendLog(log=(f'Hello, {member.name}, welcome traveller!'), client=client))
 
 
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
+
+    mentions = message.mentions
+    if len(mentions) > 0:
+        if mentions[0].id == 785611565075791922:
+            if search("^!quit", message.content.lower()) and message.channel == client.get_channel(789190323326025789):
+                await client.logout()
 
     if search("^!lore", message.content):
         length = 6
@@ -46,7 +53,7 @@ async def on_message(message):
             server = message.guild.id
             # channel = client.get_channel(785703473147936808)
             # await channel.send("Server " + str(server))
-            print(server)
+            print(await sendLog(log=("Server: " + server), client=client))
             # Open Data Based on Server
             if server == 785611085418987531:
                 path = './lore_books/rimworld.json'
@@ -57,7 +64,7 @@ async def on_message(message):
 
             with open(path) as f:
                 data = json.load(f)
-            print(data)
+            print(await sendLog(log=("Data: \n" + data), client=client))
 
             # Find Lore
             found = False
